@@ -5,7 +5,7 @@ This is an interview ready template for fullstack web development with Nodejs(Ex
 The project has the following contents
 Sure, here are the links to the npm packages you mentioned:
 
-> ### In frontend
+### In frontend
 - [ReactJS](https://www.npmjs.com/package/react)
 - [React Query](https://www.npmjs.com/package/react-query)
 - [React Toast](https://www.npmjs.com/package/react-toast)
@@ -14,7 +14,8 @@ Sure, here are the links to the npm packages you mentioned:
 - [React Icons](https://www.npmjs.com/package/react-icons)
 - [Yup](https://www.npmjs.com/package/yup)
 
-> ### In backend
+
+### In backend
 - [Joi](https://www.npmjs.com/package/joi)
 - [Express](https://www.npmjs.com/package/express)
 - [Cors](https://www.npmjs.com/package/cors)
