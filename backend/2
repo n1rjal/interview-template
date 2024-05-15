@@ -1,0 +1,26 @@
+import { Router } from "express";
+import { todoSchema } from "./todo.validators";
+
+const router = Router();
+
+router.get("", (req, res) => {
+  res.json({ message: "Hello World" });
+});
+
+router.get("/:todoId", (req, res) => {
+  console.log("req.params", req.params);
+  res.json({ message: "todo id " + req.params.todoId + " is called " });
+});
+
+router.post("", (req, res) => {
+  console.log("req.body", req.body);
+  const { error, value } = todoSchema.validate(req.body);
+  if (error) {
+    return res.status(400).json({ message: error.message });
+  }
+  res.json({ message: "todo created", data: value });
+});
+router.put("/:todoId", (req, res) => {});
+router.delete("/:todoId", (req, res) => {});
+
+export default router;

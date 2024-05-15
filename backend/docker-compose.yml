@@ -1,0 +1,32 @@
+services:
+  # app:
+  #   restart: unless-stopped
+  #   build:
+  #     context: .
+  #     target: development
+  #   depends_on:
+  #     - pg
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - "./:/app"
+  #   environment:
+  #     - PORT=3000
+  #     - DB_HOST=pg
+  #     - DB_USER=testuser
+  #     - DB_PASS=test12345
+  #     - DB_NAME=testdb
+  #     - DB_PORT=5432
+  #     - NODE_ENV=development
+
+  pg:
+    # image: mysql
+    image: postgres:alpine
+    container_name: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: test12345
+      POSTGRES_DB: testdb
+      POSTGRES_USER: testuser
+    ports:
+      - "5432:5432"
