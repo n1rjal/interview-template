@@ -1,6 +1,17 @@
 # Interview Template
 This is an interview ready template for fullstack web development with Nodejs(Express) and Js(ReactJs)
 
+
+## Scripts
+### up.sh
+- Installs packages in frontend, installs packages in backend
+- Builds and runs postgres docker container in detached mode
+
+### down.sh
+- Delete node_modules in frontnend, deletes node_modules package in backend
+- Drops the postgres docker container
+
+
 ## Contents
 The project has the following contents
 Sure, here are the links to the npm packages you mentioned:
