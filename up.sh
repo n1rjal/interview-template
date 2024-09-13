@@ -1,5 +1,5 @@
 # Path: frontend
-cd backend
+cd frontend
 pnpm install
 
 cd ..
